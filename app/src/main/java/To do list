@@ -1,0 +1,30 @@
+Important :
+
+Slight GUI fixes for MainMenuState and PaintingInfoPanel.
+
+Interpolation
+
+Brightness
+
+Conquer 2 players not matched
+Conquer not ending on timer, conquer not ending with not enough players matched
+Registering ain't a thing
+Going to sleep
+
+Handle reconnects.
+
+Handle disconnects.
+
+Bug with exit game button.
+
+Bug squashing reward.
+
+To be done later :
+Matchmaking algorithm. Don't start new match if too many are ongoing.
+Email content.
+Music.
+Graphics.
+
+ctrl Q
+ctrl E
+ctrl alt shift click

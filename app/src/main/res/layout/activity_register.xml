@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/background_login"
+        android:fillViewport="false"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            tools:context=".activities.RegisterActivity">
+
+            <EditText
+                android:id="@+id/register_panel_username_box"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/register_panel_password_box"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@+id/register_panel_username_label"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/register_panel_password2_box"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/register_panel_password_box"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/register_panel_email_box"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@+id/register_panel_password2_box"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/register_panel_email2_box"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@+id/register_panel_email_box"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/register_panel_verify_box"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/register_panel_email2_label"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/register_panel_username_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/register_panel_username_box"
+                android:layout_alignBottom="@+id/register_panel_username_box"
+                android:layout_alignLeft="@+id/register_panel_password_label"
+                android:layout_alignStart="@+id/register_panel_password_label"
+                android:text="@string/username_label"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/register_panel_password_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/register_panel_password_box"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@+id/register_panel_password_box"
+                android:layout_toRightOf="@+id/register_panel_password_box"
+                android:text="@string/password_label"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/register_panel_password2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/register_panel_password2_box"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@+id/register_panel_password2_box"
+                android:layout_toRightOf="@+id/register_panel_password2_box"
+                android:text="@string/password2_label"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/register_panel_email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/register_panel_email_box"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@+id/register_panel_email_box"
+                android:layout_toRightOf="@+id/register_panel_email_box"
+                android:text="@string/email_label"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/register_panel_email2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/register_panel_email2_box"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@+id/register_panel_email2_box"
+                android:layout_toRightOf="@+id/register_panel_email2_box"
+                android:text="@string/email2_label"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/register_panel_verify_label"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/register_panel_verify_box"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@+id/register_panel_verify_box"
+                android:layout_toRightOf="@+id/register_panel_verify_box"
+                android:text="@string/verify_label"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/register_panel_verify_box"
+                android:layout_alignStart="@+id/register_panel_verify_box"
+                android:layout_below="@+id/register_panel_verify_box"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="0dp">
+
+                    <ImageButton
+                        android:id="@+id/register_panel_register_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:contentDescription=""
+                        android:padding="0dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/button_empty" />
+
+                    <TextView
+                        android:id="@+id/register_panel_register_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/register_panel_label"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/register_panel_verify_box"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="0dp">
+
+                    <ImageButton
+                        android:id="@+id/register_panel_verify_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="32dp"
+                        android:background="@null"
+                        android:visibility="invisible"
+                        android:contentDescription=""
+                        android:padding="0dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/button_empty" />
+
+                    <TextView
+                        android:id="@+id/register_panel_verify_button_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_centerInParent="true"
+                        android:text="@string/register_panel_verify"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/register_panel_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/log_box"
+        android:layout_marginRight="-16dp"
+        android:layout_marginEnd="-16dp"
+        android:paddingEnd="24dp"
+        android:paddingRight="24dp"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+</RelativeLayout>

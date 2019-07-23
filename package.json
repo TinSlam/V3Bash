@@ -1,0 +1,19 @@
+{
+  "name": "comic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TinSlam",
+  "license": "MIT",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "express": "^4.15.3",
+    "hashmap": "^2.1.0",
+    "mysql": "^2.14.0",
+    "nodemailer": "^4.0.1",
+    "socket.io": "^2.0.3"
+  }
+}
